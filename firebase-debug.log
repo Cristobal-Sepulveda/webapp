@@ -1,0 +1,44 @@
+[debug] [2022-07-04T01:34:53.777Z] ----------------------------------------------------------------------
+[debug] [2022-07-04T01:34:53.779Z] Command:       /home/user/.nvm/versions/node/v16.14.2/bin/node /home/user/.nvm/versions/node/v16.14.2/bin/firebase init hosting
+[debug] [2022-07-04T01:34:53.779Z] CLI Version:   11.2.0
+[debug] [2022-07-04T01:34:53.780Z] Platform:      linux
+[debug] [2022-07-04T01:34:53.780Z] Node Version:  v16.14.2
+[debug] [2022-07-04T01:34:53.780Z] Time:          Sun Jul 03 2022 21:34:53 GMT-0400 (Chile Standard Time)
+[debug] [2022-07-04T01:34:53.781Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-04T01:34:53.786Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-04T01:34:53.786Z] > authorizing via signed-in user (sepulveda.cristobal.ignacio@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/Documents/ReactJsProyects/webapp
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-04T01:34:56.715Z] > refreshing access token with scopes: []
+[debug] [2022-07-04T01:34:56.718Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-04T01:34:56.718Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-04T01:34:57.016Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-07-04T01:34:57.017Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-04T01:34:57.030Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-07-04T01:34:57.590Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-07-04T01:34:57.590Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project steam-ego-355206 (webapp) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

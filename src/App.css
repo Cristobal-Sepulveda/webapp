@@ -1,10 +1,16 @@
-.App {
-  text-align: center;
-}
 
+.Container{
+  height:100vh;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.Center{
+  Display: flex;
+  Height: 65vh;
+  Align-Items: center;
+  Justify-Content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -12,7 +18,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.NavBar{
+  box-shadow: 0 0.7px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +44,5 @@
     transform: rotate(360deg);
   }
 }
+
+
