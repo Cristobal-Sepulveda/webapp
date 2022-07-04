@@ -1,18 +1,26 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/logo.svg";
 
-const NavBarApp = ({ cambiadorDePagina }) => {
+const NavBarApp = ({}) => {
+  // return (
+  //   <Navbar bg="dark" variant="dark">
+  //     <Container>
+  //       <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+  //       <Nav className="me-auto">
+  //         <Nav.Link href="/">Home</Nav.Link>
+  //         <Nav.Link href="#features">Features</Nav.Link>
+  //         <Nav.Link href="#pricing">Pricing</Nav.Link>
+  //       </Nav>
+  //     </Container>
+  //   </Navbar>
+  // );
   return (
     <div class="NavBar">
       <Navbar bg="light" variant="light">
         {/* CONTENEDOR */}
         <Container>
           {/* ImagenLogo */}
-          <Navbar.Brand
-            onClick={() => {
-              cambiadorDePagina("Index");
-            }}
-          >
+          <Navbar.Brand href="/">
             <img
               alt=""
               src={logo}
@@ -24,39 +32,19 @@ const NavBarApp = ({ cambiadorDePagina }) => {
           {/* Links */}
           <Nav className="justify-content-end">
             {/* Inicio */}
-            <Nav.Link
-              onClick={() => {
-                cambiadorDePagina("Index");
-              }}
-              style={{ color: "#06414d" }}
-            >
+            <Nav.Link href="/" style={{ color: "#06414d" }}>
               Inicio
             </Nav.Link>
             {/* QuienesSomos */}
-            <Nav.Link
-              onClick={() => {
-                cambiadorDePagina("QuienesSomos");
-              }}
-              style={{ color: "#06414d" }}
-            >
+            <Nav.Link href="/quienes_somos" style={{ color: "#06414d" }}>
               Quienes Somos
             </Nav.Link>
             {/* Servicios */}
-            <Nav.Link
-              onClick={() => {
-                cambiadorDePagina("Servicios");
-              }}
-              style={{ color: "#06414d" }}
-            >
+            <Nav.Link href="/servicios" style={{ color: "#06414d" }}>
               Servicios
             </Nav.Link>
             {/* Contacto */}
-            <Nav.Link
-              onClick={() => {
-                cambiadorDePagina("Contacto");
-              }}
-              style={{ color: "#06414d" }}
-            >
+            <Nav.Link href="/contacto" style={{ color: "#06414d" }}>
               Contacto
             </Nav.Link>
           </Nav>

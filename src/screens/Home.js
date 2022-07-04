@@ -1,6 +1,6 @@
 import logo from "../assets/logo.svg";
 
-const Index = () => {
+const Home = () => {
   return (
     <div>
       <div className="Center">
@@ -13,9 +13,9 @@ const Index = () => {
           alt="logo"
         />
       </div>
-      <p style={{ textAlign: "center" }}>Index Screen</p>
+      <p style={{ textAlign: "center" }}>Home Screen</p>
     </div>
   );
 };
 
-export default Index;
+export default Home;

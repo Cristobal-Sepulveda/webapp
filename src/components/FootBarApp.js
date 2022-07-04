@@ -1,16 +1,12 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/logo.svg";
 
-const FootBarApp = ({ cambiadorDePagina }) => {
+const FootBarApp = ({}) => {
   return (
     <div sticky="bottom" style={{}}>
       <Navbar style={{ backgroundColor: "#143e61" }} variant="light">
         <Container>
-          <Navbar.Brand
-            onClick={() => {
-              cambiadorDePagina("Index");
-            }}
-          >
+          <Navbar.Brand href="/">
             <img
               alt=""
               src={logo}
@@ -43,12 +39,7 @@ const FootBarApp = ({ cambiadorDePagina }) => {
                 marginBottom: 5,
               }}
             >
-              <a
-                onClick={() => {
-                  cambiadorDePagina("Index");
-                }}
-                style={{ color: "white", textDecoration: "none" }}
-              >
+              <a href="/" style={{ color: "white", textDecoration: "none" }}>
                 Inicio
               </a>
             </p>
@@ -63,9 +54,7 @@ const FootBarApp = ({ cambiadorDePagina }) => {
               }}
             >
               <a
-                onClick={() => {
-                  cambiadorDePagina("QuienesSomos");
-                }}
+                href="/quienes_somos"
                 style={{ color: "white", textDecoration: "none" }}
               >
                 Quienes Somos
@@ -82,9 +71,7 @@ const FootBarApp = ({ cambiadorDePagina }) => {
               }}
             >
               <a
-                onClick={() => {
-                  cambiadorDePagina("Servicios");
-                }}
+                href="/servicios"
                 style={{ color: "white", textDecoration: "none" }}
               >
                 Servicios
@@ -101,9 +88,7 @@ const FootBarApp = ({ cambiadorDePagina }) => {
               }}
             >
               <a
-                onClick={() => {
-                  cambiadorDePagina("Contacto");
-                }}
+                href="/contacto"
                 style={{ color: "white", textDecoration: "none" }}
               >
                 Contacto

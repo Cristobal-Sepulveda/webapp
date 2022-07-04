@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams,
+} from "react-router-dom";
 import "./App.css";
 import QuienesSomos from "./screens/QuienesSomos";
-import Index from "./screens/Index";
+import Home from "./screens/Home";
 import Servicios from "./screens/Servicios";
 import Contacto from "./screens/Contacto";
 import Firma from "./components/Firma";
@@ -66,29 +73,23 @@ const App = () => {
   };
 
   return (
-    // Contenedor
-    <div className="Container" style={{ backgroundColor: "#fff" }}>
+    <Router>
       {/* NAVBAR */}
       <NavBarApp cambiadorDePagina={cambiadorDePagina} />
       {/* Body */}
       <div style={{ height: "100%" }}>
-        {showIndex ? (
-          <Index />
-        ) : showQuienesSomos ? (
-          <QuienesSomos />
-        ) : showServicios ? (
-          <Servicios />
-        ) : showContacto ? (
-          <Contacto />
-        ) : (
-          <div></div>
-        )}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/quienes_somos" element={<QuienesSomos />} />
+          <Route path="servicios" element={<Servicios />} />
+          <Route path="contacto" element={<Contacto />} />
+        </Routes>
       </div>
       {/* FOOTBAR */}
       <FootBarApp cambiadorDePagina={cambiadorDePagina} />
       {/* FIRMA */}
       <Firma />
-    </div>
+    </Router>
   );
 };
 
