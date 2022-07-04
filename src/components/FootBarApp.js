@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg";
 
 const FootBarApp = ({ cambiadorDePagina }) => {
   return (
-    <div sticky="bottom" style={{ marginBottom: 31.5 }}>
+    <div sticky="bottom" style={{}}>
       <Navbar style={{ backgroundColor: "#143e61" }} variant="light">
         <Container>
           <Navbar.Brand
